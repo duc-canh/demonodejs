@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("head")%>;
+<body>
+<div class="container">
+    <h1>số người truy cập trang : người</h1>
+<%- include("nav")%>;
+    <div id="mid">
+
+        <div class="row">
+            <div class="mid col-md-3">
+                <img src="../imagegroup/pant.jpg"/>
+                <h5>HIP PANTS 6</h5>
+                <div class="p1">Dolor donec sagittis sapien. Ante </br>aptent feugiat adipisicing</div>
+                <h5 class="h5">$28.49</h5>
+            </div>
+            <div class="col-md-3 mid">
+                <img src="../imagegroup/shirts.jpg"/>
+                <h5>HIP SHIRT 12</h5>
+                <div class="p1">Dolor donec sagittis sapien. Ante </br>aptent feugiat adipisicing</div>
+                <h5 class="h5">$14.81</h5>
+            </div>
+            <div class="col-md-3 mid">
+                <img src="../imagegroup/pant.jpg"/>
+                <h5>HIP PANTS 4</h5>
+                <div class="p1">Dolor donec sagittis sapien. Ante </br>aptent feugiat adipisicing</div>
+                <h5 class="h5">$28.49</h5>
+            </div>
+            <div class="col-md-3 mid">
+                <img src="../imagegroup/shirts.jpg"/>
+                <h5>HIP SHIRT 9</h5>
+                <div class="p1">Dolor donec sagittis sapien. Ante </br>aptent feugiat adipisicing</div>
+                <h5 class="h5">$14.81</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<did id="mid1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 pro"><div class="mid1"> <h5>PRODUCT DETAILS</h5></div></div>
+            <div class="col-md-3 pro"><div class="mid1"> <h5>PRODUCT DETAILS</h5></div></div>
+            <div class="col-md-3 pro"><div class="mid1"> <h5>PRODUCT DETAILS</h5></div></div>
+            <div class="col-md-3 pro"><div class="mid1"> <h5>PRODUCT DETAILS</h5></div></div>
+        </div>
+    </div>
+</did>
+<div id="bottom">
+    <div class="container">
+        <div class="row">
+            <% for(var i=0;i<product.length;i++){%>
+            <div class="col-md-3 bottom">
+                <img src="<%= product[i].img %>"/>
+                <h5><%= product[i].name%></h5>
+                <div class="p1">Dolor donec sagittis sapien. Ante </br>aptent feugiat adipisicing</div>
+                <h5 class="h5">$28.49</h5>
+            </div>
+                <%} %>
+            <div class="col-md-3 bottom">
+                <img src="../imagegroup/shirts.jpg"/>
+                <h5>HIP SHIRT 1</h5>
+                <div class="p1">Dolor donec sagittis sapien. Ante </br>aptent feugiat adipisicing</div>
+                <h5 class="h5">$12.81</h5>
+            </div>
+            <div class="col-md-3 bottom">
+                <img src="../imagegroup/shirts.jpg"/>
+                <h5>HIP SHIRT 8</h5>
+                <div class="p1">Dolor donec sagittis sapien. Ante </br>aptent feugiat adipisicing</div>
+                <h5 class="h5">$14.81</h5>
+            </div>
+            <div class="col-md-3 bottom">
+                <img src="../imagegroup/shirts.jpg"/>
+                <h5>HIP SHIRT 2</h5>
+                <div class="p1">Dolor donec sagittis sapien. Ante </br>aptent feugiat adipisicing</div>
+                <h5 class="h5">$14.81</h5>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
