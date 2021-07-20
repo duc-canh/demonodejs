@@ -39,7 +39,7 @@ app.get("/",function (req,res){
 app.get("/ke-toan",function (req,res){
     res.sendFile(__dirname+"/public/assignment/asjs5/asjs5.html");
 });
-app.get("/chitier",function (req,res){
+app.get("/chitiet",function (req,res){
    res.render("chitiet");
 });
 
