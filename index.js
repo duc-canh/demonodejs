@@ -1,10 +1,10 @@
 var express = require("express");
 var app = express(); // tao 1 ung dung tu express module
-var port = process.env.PORT | 5000;
+var port = process.env.PORT || 5000;
 app.listen(port,function (){
     console.log("Server is running....");
 });
-// cap quyen truy cap cac file static (css, img, jquery...)
+// cap quyen truy cap cac abn file static (css, img, jquery...)
 app.use(express.static("public"));
 app.set("view engine","ejs");// Báo rằng sẽ sử dụng ejs làm view engine
 var count = 0;// dem so luong nguoi vao web
