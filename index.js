@@ -37,7 +37,8 @@ app.get("/",function (req,res){
     });//tự động hiểu lấy file home,ejs trong thư mực
 });
 app.get("/ke-toan",function (req,res){
-    res.sendFile(__dirname+"/public/vdveboostrapjs.html");
+    //res.sendFile(__dirname+"/public/vdveboostrapjs.html");
+    res.render("vdbts");
 });
 app.get("/chitiet",function (req,res){
    res.render("chitiet");
