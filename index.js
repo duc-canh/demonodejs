@@ -37,7 +37,7 @@ app.get("/",function (req,res){
     });//tự động hiểu lấy file home,ejs trong thư mực
 });
 app.get("/ke-toan",function (req,res){
-    res.sendFile(__dirname+"/public/assignment/asjs5/asjs5.html");
+    res.sendFile(__dirname+"/public/vdveboostrapjs.html");
 });
 app.get("/chitiet",function (req,res){
    res.render("chitiet");
